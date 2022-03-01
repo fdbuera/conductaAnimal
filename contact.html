@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Conducta Animal</title>
+</head>
+<body>
+    <header>
+        <div class="ancho__header">
+            <a href="index.html" class="logo__header">
+                <img src="images/logoDecoFooter.png" alt="logoHeader" class="logo__header__img">
+            </a>
+            <nav class="nav">
+                <ul >
+                    <li class="nav__lista"><a class="nav__list__a" href="service.html">Servicios</li></a>
+                    <li class="nav__lista"><a class="nav__list__a" href="news.html">Noticias</li></a>
+                    <li class="nav__lista"><a class="nav__list__a" href="gallery.html">Galeria</li></a>
+                    <li class="nav__lista"><a class="nav__list__a" href="contact.html">Contacto</li></a>
+                    <!-- redes -->
+                    <li class="nav__list__img">
+                        <a href="https://www.facebook.com/conductanimal.cba" target="_blank" class="nav__lista__img">
+                            <img class="img__redes" alt="iconoFacebook" src="images/logoFacebook.png"></a>
+                    </li>
+                    <li class="nav__list__img">
+                        <a href="https://www.instagram.com/conductanimal.cba/" target="_blank" class="nav__lista__img">
+                            <img class="img__redes" alt="iconoInstagram" src="images/logoInstagram.png"></a>
+                    </li>
+                    <li class="nav__list__img">
+                        <a href="https://www.youtube.com/channel/UCWGNu-1rK4E01iBgJey1P2w" target="_blank" class="nav__lista__img">
+                            <img class="img__redes" alt="iconoYouTube" src="images/logoYotube.png"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h2>Conctacto</h2>
+    <div>
+        <form method="post" action="">
+            <!--label direcciona al al cuadro para completar-->
+            <div>
+                <label>
+                    Nombre y apellido <input type="text" name="name" id="name" placeholder="Name" required>
+                </label>
+            </div>
+            <div>
+                <label>
+                    Correo <input type="email" id="email" name="email" placeholder="Email" required>
+                </label>
+            </div>
+            <div>
+                <label>
+                    Teléfono <input type="tel" id="phone" name="phone" placeholder="1123456789" required>
+                </label>
+            </div>
+            <div>
+                <label for="servicio">Selecciona un servicio</label>
+                <select name="servicio" id="servicio">
+                    <option value="Patalogías del comportamiento, diagnóstico y tratamiento integral">Patologías del comportamiento, diagnóstico y tratamiento integral</option>
+                    <option value="Asesoramiento y educación preventiva">Asesoramiento y educación preventiva</option>
+                    <option value="Terapia asistida con animales (TACA)">Terapia asistida con animales (TACA)</option>
+                </select>
+            
+            </div>
+            <div>
+                ¿Querés que te llamemos?
+                <label><input type="checkbox" id="box_1" value="first_checkbox">Si</label>
+                <label><input type="checkbox" id="box_1" value="first_checkbox">No</label><br>
+            </div>
+            <div class = "cuadroMs">
+                <label>Mensaje <textarea name="message" placeholder="Message" cols="30" rows="10" required></textarea></label>
+            </div>
+            <div>
+                <!--Se puede utilizar input pasando type y value como parametro <input type="submit" value="Send"> -->
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </div>
+        </form>  
+    </div>    
+    
+</body>
+</html>

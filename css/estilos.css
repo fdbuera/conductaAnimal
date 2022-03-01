@@ -1,0 +1,286 @@
+/*-----------------------------------
+    FONTS
+-----------------------------------*/
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+/* Variables a utilizar a lo largo del proyecto */
+:root{
+    --bs-white: #F9F9F9;
+    --bs-green:rgba(0,158,130,1);
+    --bs-blue:rgb(37,61,94,1);
+    --bs-black: rgb(0, 0, 0);
+    --bs-font-sans-serif: 'Roboto', sans-serif;
+    --bs-gradient: linear-gradient(90deg, rgba(37,61,94,1) 35%, rgba(0,158,130,1) 100%);
+}
+
+/* Reseteo de estilos y estilos a utilizar en toda la web */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--bs-font-sans-serif);
+    box-sizing: border-box;
+}
+
+body{
+    background: red;
+}
+
+/* HEADER */
+header{
+    width: 100%;
+    background: var(--bs-gradient);
+}
+
+.ancho__header{
+    width: 90%;
+    height: 90px;
+    margin: auto;
+}
+
+.logo__header{
+    float: left;
+    height: 90px;
+}
+
+.logo__header__img{
+    height: 100px;
+}
+
+.nav{
+    float: right;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.nav ul{
+    list-style-type: none;
+    padding-top: 38px;
+    display: flex;
+}
+
+.nav__lista{
+    display: inline-block;
+}
+
+.nav__list__a{
+    display: block;
+    text-decoration: none;
+    color: var(--bs-white);
+    padding-inline: 10px;
+    transition: all 0.3s linear;
+}
+
+.nav__list__img{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav__lista__img{
+    object-fit: cover;
+    width: 26px;
+    height: 26px;
+    display: inline-flex;
+    transition: all 0.3s linear;
+}
+
+.img__redes{
+    width: 26px;
+    height: 26px;
+}
+
+/* Color al pasar arriba de las palabras */
+.nav__list__a:hover{
+    color: var(--bs-blue);
+}
+
+.nav__lista__img:hover{
+    background: var(--bs-blue);
+    border-radius: 15px;
+}
+
+/* HEADER MOVIL */
+.header--move{
+    position: fixed;
+    height: 70px;
+    margin: auto;
+}
+
+.header--move .ancho__header{
+    width: 90%;
+    height: 70px;
+    margin: auto;
+}
+
+.header--move .logo__header{
+    height: 70px;
+}
+
+.header--move .logo__header__img{
+    height: 70px;
+}
+
+.header--move .nav{
+    font-size: 15px;
+}
+
+.header--move .nav ul{
+    padding-top: 28px;
+}
+
+.header--move .nav__list__img{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.header--move .nav__lista__img{
+    object-fit: cover;
+    width: 20px;
+    height: 20px;
+}
+
+.header--move .img__redes{
+    width: 20px;
+    height: 20px;
+}
+
+/* Imagen Bienvenida estilos*/
+.imgWelcome{
+    background-image: url(../images/biografiaPortada.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 600px;
+    padding-bottom: 200px;
+}
+
+/* Contenido bienvenida */
+.contenidoWelcome{
+    text-align: center;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.contenidoWelcome h1{
+    padding-top: 10px;
+    color: var(--bs-black);
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+.contenidoWelcome p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    color: var(--bs-black);
+}
+
+/* cuadro transparente */
+#background__welcome{
+    background: rgba(245, 245, 245, 0.5);
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer{
+    background: linear-gradient(90deg, rgba(0,158,130,1) 35%, rgba(37,61,94,1) 100%);
+    width: 100%;
+}
+
+.ancho__footer{
+    width: 90%;
+    height: 70px;
+    margin: auto;
+}
+
+.footer__img{
+    float: left;
+    height: 70px;
+}
+
+.footer__icono{
+    height: 70px;
+}
+
+.footer__redes{
+    float: right;
+    background: sandybrown;
+}
+
+.footer__redes a{
+    display: inline;
+}
+
+.footer__redes a img{
+    width: 26px;
+    height: 26px;
+    transition: all 0.3s linear;
+}
+
+.footer__redes a img:hover{
+    background: var(--bs-green);
+    border-radius: 15px;
+}
+
+.footer__datos{
+    background: crimson;
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer__datos p{
+    text-align: center;
+}
+
+.footer__legal{
+    background: var(--bs-white);
+    font-size: 12px;
+    color: var(--bs-blue);
+    text-align: center;
+    
+}
+
+/* .footer__legal{
+    background: var(--bs-white);
+    color: var(--bs-blue);
+    width: 100%;
+}
+
+.footer__legal p{
+    text-align:center;
+    font-size: 12px;    
+}
+
+.footer__icono{
+    width: 100px;
+    height: 80px;
+}
+
+.footer__img{
+    float: left;
+    height: 80px;
+}
+
+.footer__datos{
+    text-align:center;
+    height: 80px;
+    font-size: 18px;
+}
+
+.footer__redes{
+    float: right;
+    display: inline-flex;
+}
+
+.footer__redes li{
+    list-style: none;
+}
+
+.footer__redes li a:hover{
+    background: var(--bs-green);
+    border-radius: 15px;
+
+} */
