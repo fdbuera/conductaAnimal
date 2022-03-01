@@ -23,10 +23,6 @@
     box-sizing: border-box;
 }
 
-body{
-    background: red;
-}
-
 /* HEADER */
 header{
     width: 100%;
@@ -226,7 +222,7 @@ footer{
 }
 
 .footer__datos{
-    background: crimson;
+    background: var(--bs-white);
     text-align: center;
     font-size: 12px;
 }
